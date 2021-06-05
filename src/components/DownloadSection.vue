@@ -14,7 +14,7 @@
             <v-col cols="12" sm="8" class="white--text text-left">
               <!-- <h1 class="font-weight-light display-2 mb-2" style="text"> -->
               <h1 class="title-mesa mb-2" style="text">
-                Visita nuesta Mesa de Regalos
+                Visita nuestra Mesa de Regalos
               </h1>
               <h1 class="font-weight-thin white--text">
                 El mejor regalo que nos puedes dar es tu presencia, pero si
