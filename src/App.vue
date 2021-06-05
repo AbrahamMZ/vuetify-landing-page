@@ -1,12 +1,15 @@
 <template>
   <v-app>
-    <navigation :color="color" :flat="flat" />
+    <!-- <navigation :color="color" :flat="flat" /> -->
     <v-main class="pt-0">
       <home />
-      <about />
+      <carousel />
+      <ubicacion />
       <download />
-      <pricing />
-      <contact />
+      <invitacion />
+      <!-- <about /> -->
+      <!-- <pricing /> -->
+      <!-- <contact /> -->
     </v-main>
     <v-scale-transition>
       <v-btn
@@ -23,7 +26,7 @@
         <v-icon>mdi-arrow-up</v-icon>
       </v-btn>
     </v-scale-transition>
-    <foote />
+    <!-- <foote /> -->
   </v-app>
 </template>
 
@@ -44,6 +47,9 @@ import about from "./components/AboutSection";
 import download from "./components/DownloadSection";
 import pricing from "./components/PricingSection";
 import contact from "./components/ContactSection";
+import ubicacion from "./components/MapSection";
+import carousel from "./components/CarouselSection";
+import invitacion from "./components/InvitacionSection.vue";
 
 export default {
   name: "App",
@@ -56,6 +62,9 @@ export default {
     download,
     pricing,
     contact,
+    ubicacion,
+    carousel,
+    invitacion,
   },
 
   data: () => ({
