@@ -2,10 +2,16 @@
   <section id="hero">
     <v-parallax
       dark
-      src="@/assets/img/bghero3.jpeg"
       height="750"
       gradient="to right, rgba(10, 10, 10, .3), rgba(0, 0, 0, 0)"
+      src="@/assets/img/carousel-2.jpeg"
     >
+      <!-- <v-img
+      src="@/assets/img/bgHero2.jpg"
+      height="750"
+      aspect-ratio="0.5"
+      class="pa-0 ma-0"
+    > -->
       <v-row align="center" justify="center">
         <v-col cols="10">
           <v-row align="center" justify="center">
@@ -14,22 +20,12 @@
               <h1 style="font-size: xxx-large;">
                 Nuestra Boda <br />
                 Kary & Chris <br />
-                <span style="color: palevioletred; font-size: 2rem;"
-                  >Septiembre 11, 2021</span
-                >
+                <span style="color: palevioletred; font-size: 2rem;">
+                  Septiembre 11, 2021
+                </span>
               </h1>
               <!-- <h1 class="font-weight-light"></h1> -->
-              <v-btn
-                rounded
-                outlined
-                large
-                dark
-                @click="$vuetify.goTo('#ubicacion')"
-                class="mt-5"
-              >
-                Ubicacion
-                <v-icon class="ml-2">mdi-arrow-down</v-icon>
-              </v-btn>
+
               <div class="video d-flex align-center py-4">
                 <a @click.stop="dialog = true" class="playBut">
                   <svg
@@ -75,6 +71,17 @@
                   <v-icon color="white">mdi-heart-circle-outline</v-icon>
                 </p>
               </div>
+              <v-btn
+                rounded
+                outlined
+                large
+                dark
+                @click="$vuetify.goTo('#ubicacion')"
+                class="mt-5"
+              >
+                Ubicacion
+                <v-icon class="ml-2">mdi-arrow-down</v-icon>
+              </v-btn>
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
           </v-row>
@@ -83,6 +90,7 @@
       <div class="svg-border-waves text-white">
         <v-img src="@/assets/img/borderWaves.svg" />
       </div>
+      <!-- </v-img> -->
     </v-parallax>
     <v-container fluid id="features" class="mt-2">
       <v-row align="center" justify="center">
@@ -151,6 +159,12 @@ export default {
       if (!value) {
         this.pause();
       }
+    },
+  },
+  computed: {
+    maxHeigth() {
+      const height = this.$vuetify.breakpoint.mobile ? "50vh" : "100vh";
+      return `calc(${height})`;
     },
   },
   methods: {

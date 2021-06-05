@@ -17,8 +17,9 @@
                 Visita nuesta Mesa de Regalos
               </h1>
               <h1 class="font-weight-thin white--text">
-                El mejor regalos que nos puedes dar es tu presencia, pero si
-                queires obserquiarnos al mas puedes hacer de la siguiente forma
+                El mejor regalo que nos puedes dar es tu presencia, pero si
+                quieres obserquiarnos algo mas puedes hacerlo de la siguiente
+                forma
               </h1>
               <v-btn
                 rounded

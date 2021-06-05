@@ -6,9 +6,9 @@
         cycle
         hide-delimiter-background
         vertical-delimiters
-        vertical
+        :vertical="$vuetify.breakpoint.mobile"
         delimiter-icon="mdi-heart"
-        :height="$vuetify.breakpoint.mobile ? '200px' : '500px'"
+        :height="$vuetify.breakpoint.mobile ? '220px' : '500px'"
       >
         <v-carousel-item v-for="(item, i) in 9" :key="i">
           <v-img
@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     maxHeigth() {
-      const height = this.$vuetify.breakpoint.mobile ? "30vh" : "83vh";
+      const height = this.$vuetify.breakpoint.mobile ? "50vh" : "83vh";
       return `calc(${height} - ${this.$vuetify.application.top}px)`;
     },
   },
