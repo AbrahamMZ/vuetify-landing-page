@@ -30,7 +30,7 @@
                 Ubicacion
                 <v-icon class="ml-2">mdi-arrow-down</v-icon>
               </v-btn>
-              <!-- <div class="video d-flex align-center py-4">
+              <div class="video d-flex align-center py-4">
                 <a @click.stop="dialog = true" class="playBut">
                   <svg
                     version="1.1"
@@ -70,8 +70,11 @@
                     />
                   </svg>
                 </a>
-                <p class="subheading ml-2 mb-0">Assista o vídeo</p>
-              </div> -->
+                <p class="subheading ml-2 mb-0">
+                  Dale Play
+                  <v-icon color="white">mdi-heart-circle-outline</v-icon>
+                </p>
+              </div>
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
           </v-row>
@@ -85,7 +88,7 @@
       <v-row align="center" justify="center">
         <v-col
           cols="12"
-          sm="4"
+          sm="6"
           class="text-center"
           v-for="(feature, i) in features"
           :key="i"
@@ -96,7 +99,6 @@
               shaped
               :elevation="hover ? 10 : 4"
               :class="{ up: hover }"
-              max-width="950px"
             >
               <v-img
                 :src="feature.img"
@@ -131,7 +133,7 @@ export default {
   data() {
     return {
       dialog: false,
-      videoId: "i8IvvHJssWE",
+      videoId: "PGeCnGtMRVg",
       features: [
         {
           img: require("@/assets/img/wedding-arch.png"),

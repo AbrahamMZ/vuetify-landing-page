@@ -1,6 +1,9 @@
 <template>
   <section id="ubicacion" class="pb-8">
-    <h1 class="title-ubicacion">
+    <h1
+      class="title-ubicacion-mobile"
+      :class="!$vuetify.breakpoint.mobile ? 'title-md' : ''"
+    >
       Ubicacion de la ceremonia y evento: <br />
       La ceremonia se llevara a acabo en el salon "El escondite" a las 14:00
       hrs.
@@ -19,11 +22,15 @@
 export default {};
 </script>
 <style>
-.title-ubicacion {
+.title-ubicacion-mobile {
   font-family: "Bad Script", cursive;
-  font-size: xx-large;
+  font-size: 1rem;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.title-md {
+  font-size: 2rem;
 }
 </style>

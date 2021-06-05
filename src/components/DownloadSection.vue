@@ -16,7 +16,7 @@
               <h1 class="title-mesa mb-2" style="text">
                 Visita nuesta Mesa de Regalos
               </h1>
-              <h1 class="font-weight-light">
+              <h1 class="font-weight-thin white--text">
                 El mejor regalos que nos puedes dar es tu presencia, pero si
                 queires obserquiarnos al mas puedes hacer de la siguiente forma
               </h1>
@@ -50,6 +50,7 @@
   background-size: cover;
   background-position: center;
   height: 500px;
+  opacity: 0.9;
 }
 
 #download .container,
@@ -58,7 +59,7 @@
 }
 .title-mesa {
   font-family: "Bad Script", cursive;
-  font-size: 4rem;
+  font-size: 2rem;
   color: rgb(238, 3, 168);
   text-align: start;
   margin-top: 2rem;
